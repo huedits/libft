@@ -28,5 +28,5 @@ git:
 	echo "Commiting in 5 seconds"
 	sleep 5
 	git add *.c *.h Makefile
-	git commit -m "Automatic commit from make git"
+	git commit -m "Automatic commit from Makefile"
 	git push
