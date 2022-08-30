@@ -27,6 +27,6 @@ git:
 	git status
 	echo "Commiting in 5 seconds"
 	sleep 5
-	git add *.c *.h Makefile
+	git add .
 	git commit -m "Automatic commit from make git"
 	git push
