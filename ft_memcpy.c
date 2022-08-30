@@ -6,7 +6,7 @@
 /*   By: vimatheu <vimatheu@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 16:48:35 by vimatheu          #+#    #+#             */
-/*   Updated: 2022/08/30 17:00:24 by vimatheu         ###   ########.fr       */
+/*   Updated: 2022/08/30 18:20:46 by vimatheu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		intdest[n - 1] = intsrc[n - 1];
 		n--;
 	}
-	return (dst);
+	return (intdest);
 }
