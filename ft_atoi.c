@@ -6,7 +6,7 @@
 /*   By: vimatheu <vimatheu@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 18:45:04 by vimatheu          #+#    #+#             */
-/*   Updated: 2022/08/30 16:35:09 by vimatheu         ###   ########.fr       */
+/*   Updated: 2022/08/30 16:43:39 by vimatheu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ int	ft_atoi(const char *c)
 		s = 1;
 	while (c[i])
 	{
+		if (!(c[i] >= '0' && c[i] <= '9'))
+			return (0);
 		if (ft_check_limit(r, (c[1] - '0'), s) == 0)
 			return (0);
 		r = r * 10 + (c[i] - '0');
