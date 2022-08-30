@@ -6,7 +6,7 @@
 /*   By: vimatheu <vimatheu@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 02:16:29 by vimatheu          #+#    #+#             */
-/*   Updated: 2022/08/30 16:23:25 by vimatheu         ###   ########.fr       */
+/*   Updated: 2022/08/30 16:31:26 by vimatheu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ void	ft_bzero(void *s, size_t n)
 	size_t	i;
 
 	if (n == 0)
-		return ();
+		return ;
 	str = (char *)s;
 	i = 0;
-	while (i < n && s[i] != '\0')
+	while (i < n && str[i] != '\0')
 	{
 		str[i] = 0;
 		i++;
