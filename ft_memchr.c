@@ -6,7 +6,7 @@
 /*   By: vimatheu <vimatheu@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 20:28:25 by vimatheu          #+#    #+#             */
-/*   Updated: 2022/08/31 02:35:34 by vimatheu         ###   ########.fr       */
+/*   Updated: 2022/08/31 20:46:01 by vimatheu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int	*str;
+	char			*str;
+	unsigned char	char_c;
 
-	str = (int *) s;
+	char_c = (unsigned char) c;
+	str = (char *) s;
 	while (n > 0)
 	{
-		if (*str == c)
+		if (*str == char_c)
 			return (str);
 		str++;
 		n--;
