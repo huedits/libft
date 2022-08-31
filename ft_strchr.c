@@ -6,7 +6,7 @@
 /*   By: vimatheu <vimatheu@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 22:01:52 by vimatheu          #+#    #+#             */
-/*   Updated: 2022/08/25 22:39:53 by vimatheu         ###   ########.fr       */
+/*   Updated: 2022/08/31 20:21:06 by vimatheu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	char	*str;
 
-	i = 0;
-	while (s[i] != c && s[i])
-		i++;
-	if (s[i] == c)
-		return ((char *) &s[i]);
+	str = (char *)s;
+	if (c > 255)
+		return (str);
+	while (*str && *str != c)
+		str++;
+	if (*str == c)
+		return (str);
 	return (NULL);
 }
