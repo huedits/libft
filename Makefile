@@ -23,7 +23,7 @@ fclean: clean
 
 re: fclean all
 
-git:
+git: fclean
 	git status
 	echo "Commiting in 5 seconds"
 	sleep 5
