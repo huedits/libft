@@ -6,7 +6,7 @@
 /*   By: vimatheu <vimatheu@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 21:21:09 by vimatheu          #+#    #+#             */
-/*   Updated: 2022/08/30 21:24:02 by vimatheu         ###   ########.fr       */
+/*   Updated: 2022/08/31 19:32:16 by vimatheu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	if (i == n)
 		return (0);
 	else
-		return (str1[i] - str2[i]);
+		return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
