@@ -6,7 +6,7 @@
 /*   By: vimatheu <vimatheu@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 19:22:23 by vimatheu          #+#    #+#             */
-/*   Updated: 2022/09/02 19:22:53 by vimatheu         ###   ########.fr       */
+/*   Updated: 2022/09/05 19:20:54 by vimatheu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,11 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	return ();
+	if (!lst || !f)
+		return ;
+	while (lst)
+	{
+		(f)(lst->content);
+		lst = lst->next;
+	}
 }
