@@ -6,7 +6,7 @@
 /*   By: vimatheu <vimatheu@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 19:20:52 by vimatheu          #+#    #+#             */
-/*   Updated: 2022/09/05 18:54:12 by vimatheu         ###   ########.fr       */
+/*   Updated: 2022/09/05 19:49:46 by vimatheu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)
 		return ;
-	(del)(lst->content);
+	del(lst->content);
 	free(lst);
 }
