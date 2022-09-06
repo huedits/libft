@@ -10,8 +10,8 @@ It will contain a lot of general purpose functions your programs will rely upon.
 
 ### Content
 ```diff
-+ This project has been completed and evaluated.
-Final grade 125/100.
+This project has been completed and evaluated.
++ Final grade 125/100.
 ```
 - [x] **Extra files** 2/2<br>
 [Makefile](https://github.com/huedits/libft/blob/main/Makefile)
