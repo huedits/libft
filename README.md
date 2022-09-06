@@ -66,4 +66,4 @@ It will contain a lot of general purpose functions your programs will rely upon.
 
 This project is licensed. Check out [LICENSE](LICENSE.md) for more details.
 
-[⬆ Back to the top](# libft)<br>
+[⬆ Back to the top](#libft)<br>
