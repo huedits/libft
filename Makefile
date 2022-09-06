@@ -21,20 +21,17 @@ OBJS = $(SRCS:.c=.o)
 B_OBJS = $(BONUS:.c=.o)
 
 all: $(NAME)
-$(NAME): $(OBJS)
-	ar rc $(NAME) $(OBJS)
 
-$(OBJS):
-	gcc $(FLAGS) -I $(LIB_PATH) -c $(SRCS)
+$(NAME): $(OBJS)
 
 bonus: $(B_OBJS)
-	ar rc $(NAME) $(B_OBJS)
-
-$(B_OBJS):
-	gcc $(FLAGS) -I $(LIB_PATH) -c $(BONUS)
 
 clean:
-	$(REMOVE) *.o
+	$(REMOVE) $(OBJS) $(B_OBJS)
+
+%.o: %.c
+	gcc -c $(FLAGS) $< -o $@
+	ar -rcs $(NAME) $@
 
 fclean: clean
 		$(REMOVE) $(NAME)
@@ -49,4 +46,4 @@ git: fclean
 	git commit -m "Automatic commit from Makefile"
 	git push
 
-.PHONY: re fclean clean all
+.PHONY: re fclean clean all bonus $(NAME) git
