@@ -1,7 +1,7 @@
 # libft
-<img src="https://game.42sp.org.br/static/assets/achievements/libftm.png" alt="completion-with-bonus-badge" align="right">
+42 Cursus - Libft
 
-<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
+<img src="https://game.42sp.org.br/static/assets/achievements/libftm.png" alt="completion-with-bonus-badge" align="right">
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 
